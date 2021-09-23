@@ -9,6 +9,12 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <style>
+    .tm-social {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
 
   <title>Sun Reborn</title>
 </head>
@@ -17,6 +23,7 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
+      <p class="center"></p>
       <a class="navbar-brand" href="#">Sun Reborn</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,19 +42,22 @@
               Redes Sociais
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">GitHub</a></li>
-              <li><a class="dropdown-item" href="#">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/ummrodrigo/" target="_blank">Instagram</a>
+              </li>
+              <li><a class="dropdown-item" href="https://github.com/Razzkz" target="_blank">GitHub</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/rodrigo-silva-de-ara%C3%BAjo/"
+                  target="_blank">LinkedIn</a>
+              </li>
             </ul>
           </li>
 
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+          <button class="btn btn-outline-dark" type="submit">Pesquisa</button>
         </form>
       </div>
     </div>
@@ -55,7 +65,7 @@
   <!--/Navbar-->
 
   <!--Carousel-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide border border-dark  " data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -68,19 +78,19 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://www.coderfactory.com.br/cf-assets/uploads/2019/09/curso-HTML-CSS-JS.jpeg"
+        <img src="https://images.wallpaperscraft.com/image/single/star_galaxy_glow_light_95414_1280x720.jpg"
           class="d-block w-100" alt="Primeiro Slide">
       </div>
       <div class="carousel-item">
-        <img src="https://i.ytimg.com/vi/8lA_k7nlO-c/maxresdefault.jpg" class="d-block w-100" alt="Segundo Slide">
+        <img src="https://wallpaperstock.net/blue-textures-and-light-wallpapers_34092_1280x720.jpg"
+          class="d-block w-100" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img src="https://mcdn.wallpapersafari.com/medium/75/85/LYBWjP.jpg" class="d-block w-100" alt="Terceiro Slide">
       </div>
       <div class="carousel-item">
         <img
-          src="https://www.elaborata.com.br/img/treinamentos/original/163-desenvolvimento-front-end-com-html-css-javascript-e-bootstrap-capa.jpg"
-          class="d-block w-100" alt="Terceiro Slide">
-      </div>
-      <div class="carousel-item">
-        <img src="https://s3.eu-west-2.amazonaws.com/1training.org/wp-content/uploads/2017/10/18232806/6.png"
+          src="data:image/jpeg;base64,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"
           class="d-block w-100" alt="Terceiro Slide">
       </div>
     </div>
@@ -97,106 +107,202 @@
   </div>
   <!--/Carousel-->
 
-  <!--Jumbotron-->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+  <p>
+  <p>
+    <!--Colunas de Cards -->
+  <div class="container mt-5">
+    <div class="card-columns justify-content-center">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/Img.JPEG" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
+          <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a
+            um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+        </div>
+
+      </div>
+      <div class="card p-3">
+        <blockquote class="blockquote mb-0 card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="assets/img/Img2.JPEG" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo adicional.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+      <div class="card bg-warning text-dark text-center p-3">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+          <footer class="blockquote-footer">
+            <small>
+              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo adicional.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img " src="assets/img/Img3.JPEG" alt="Imagem do card">
+      </div>
+      <div class="card p-3 text-right">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em
+            ação.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
     </div>
+    </p>
+    </p>
+
+
+    <!--/Colunas de Cards -->
+
+    <!--Texto e Video -->
+
+    <div class="row mt-5 mb-5">
+      <div class="col-md-6">
+        <h3>Texto a sua escolha</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea cum fugit velit fuga quo, non, sequi commodi
+          repudiandae, itaque temporibus in cumque aliquam? Nulla in asperiores dolores, animi ex ipsam.
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quibusdam id eius ab consequuntur. Ipsum quo
+          eligendi doloremque et, quidem atque sequi, nulla aspernatur quis eos temporibus labore, blanditiis autem?
+        </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quas, fugiat sed excepturi nemo perferendis! Nobis
+        ipsa et laudantium, tenetur, in id ea error sequi temporibus quidem, adipisci ut sit.
+      </div>
+
+
+
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8q171gFPqKs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+    <!--/Texto e Video -->
+
+    <!--Formulário de Contato-->
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <h4 class="text-center">
+          Entre em contato conosco
+        </h4>
+      </div>
+    </div>
+
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Select de exemplo</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Exemplo de select múltiplo</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <br>
+          <div class="form-group d-flex justify-content-end">
+            <button class="btn btn-outline-dark">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <iframe class="w-100"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0843745683273!2d-46.65456188554297!3d-23.565412967625836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7940306f1%3A0x1befb07f56f03c6d!2sAv.%20Paulista%2C%201001%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-100!5e0!3m2!1spt-BR!2sbr!4v1632364809425!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </div>
+    </div>
+
+    <!--/Formulário de Contato-->
+
+    <!--Rodapé-->
+    <hr>
+    <footer>
+      <div class="container2 text-center">
+
+        <div class=" row d-flex justify-content-center">
+
+          <div class="col-md-12">
+            <p class="text-center">
+
+              Todos os direitos reservados: Rodrigo Silva de Araújo &copy; </p>
+
+            <a href="https://github.com/Razzkz" target="_blanck" class="p-3">
+              <img class="tm-social" src="assets/img/github.png" alt="Logo do GitHub">
+            </a>
+
+            <a href="https://www.linkedin.com/in/rodrigo-silva-de-ara%C3%BAjo/" target="_blanck">
+              <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
+    </footer>
   </div>
-  <!--/Jumbotron-->
-
-<!--Colunas de Cards -->
-<div class="container">
-  <div class="card-columns justify-content-center">
-    <div class="card">
-      <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-        <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a
-          um conteúdo adicional. Este conteúdo é um pouco maior.</p>
-      </div>
-    </div>
-    <div class="card p-3">
-      <blockquote class="blockquote mb-0 card-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">
-          <small class="text-muted">
-            Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-          </small>
-        </footer>
-      </blockquote>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
-          conteúdo adicional.</p>
-        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-      </div>
-    </div>
-    <div class="card bg-primary text-white text-center p-3">
-      <blockquote class="blockquote mb-0">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-        <footer class="blockquote-footer">
-          <small>
-            Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-          </small>
-        </footer>
-      </blockquote>
-    </div>
-    <div class="card text-center">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
-          conteúdo adicional.</p>
-        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img" src=".../100px260/" alt="Imagem do card">
-    </div>
-    <div class="card p-3 text-right">
-      <blockquote class="blockquote mb-0">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">
-          <small class="text-muted">
-            Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
-          </small>
-        </footer>
-      </blockquote>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Título do card</h5>
-        <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-          conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em
-          ação.</p>
-        <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-      </div>
-    </div>
+  <!--/Rodapé-->
   </div>
-</div>
-<!--/Colunas de Cards -->
+  </div>
+  </div>
 
-<!--Texto e Video -->
 
-<div class="row mt-5 mb-5">
-<div class="col-md-6">
-  <h3>Texto a sua escolha</h3>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea cum fugit velit fuga quo, non, sequi commodi repudiandae, itaque temporibus in cumque aliquam? Nulla in asperiores dolores, animi ex ipsam.
-  </p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quibusdam id eius ab consequuntur. Ipsum quo eligendi doloremque et, quidem atque sequi, nulla aspernatur quis eos temporibus labore, blanditiis autem?
-  </p>
-</div>
 
-<div class="col-md-6">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/8q171gFPqKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
 
-<!--/Texto e Video -->
+
+
 
 
 
